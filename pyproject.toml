@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tailingsiq-backend"
+version = "1.0.0"
+description = "TailingsIQ Backend API"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Proprietary"}
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn==0.24.0",
+    "pydantic==2.4.2",
+    "python-multipart==0.0.6",
+    "PyJWT==2.8.0",
+    "python-jose==3.3.0",
+]
+
+[tool.setuptools]
+packages = ["routers"]
